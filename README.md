@@ -1,6 +1,6 @@
-﻿# SSUET Library Management System (Java & NetBeans)
+# SSUET Library Management System (Java & NetBeans)
 
-A desktop GUI application developed as an Object-Oriented Programming (OOP) semester project for the 3rd Semester of Software Engineering at Sir Syed University of Engineering and Technology (SSUET).
+A desktop GUI application developed as an Academic ERP Module for the Object-Oriented Programming (OOP) course project in the 3rd Semester of Software Engineering at Sir Syed University of Engineering and Technology (SSUET).
 
 ---
 
@@ -14,10 +14,20 @@ A desktop GUI application developed as an Object-Oriented Programming (OOP) seme
 
 ---
 
+## System Architecture & ERP Integration Scope
+
+This application is designed as an enterprise module within a university ecosystem:
+
+* **ERP Module Focus:** Functions as the primary Library & Inventory Management subsystem for campus administration.
+* **Student & Faculty Management:** Connects user profiles (Students/Faculty) with borrowing limits, due dates, and fine tracking.
+* **Modular Design:** Built with decoupled layers (Views, Models, Controllers) allowing seamless future integration into a full-scale University ERP via JDBC database connection or REST APIs.
+
+---
+
 ## Core OOP Concepts Applied in Java
 
 1. **Encapsulation:** Class attributes (e.g., `bookID`, `studentRollNo`, `fineAmount`) are marked `private` and accessed via `getters` and `setters`.
-2. **Inheritance:** Extends a base `User` class into specialized `Student` and `Faculty` classes to share core profile data.
+2. **Inheritance:** Extends a base `User` class into specialized `Student` and `Faculty` classes to share core profile data and extend specific attributes.
 3. **Polymorphism:** Method overriding (e.g., calculating differential borrowing limits or overdue fines for students vs. faculty).
 4. **Abstraction:** Standard interface patterns implemented using Java Interfaces and Abstract Classes for modular database/file handling operations.
 5. **GUI & Event Handling:** Built using Java Swing / AWT components (`JFrame`, `JPanel`, `JTable`, `JButton`) with `ActionListener` event triggers created in NetBeans.
